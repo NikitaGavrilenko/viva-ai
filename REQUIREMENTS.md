@@ -1,148 +1,157 @@
-# Требования соревнования
+# Competition Requirements
 
-## 1. Допуск к участию
+## 1. Eligibility
 
-- Возраст: 13 лет и старше.
-- Участвовать могут только студенты.
-- Компании и профессиональные организации не допускаются.
-- Разрешено участие из всех стран и территорий, кроме стандартных исключений Devpost.
-- Формат: индивидуально или команда до 4 человек включительно.
-- Помимо регистрации на Devpost организаторы просят заполнить [Google-форму](https://forms.gle/DL7ye47iHE84rHQ2A).
+- Participants must be at least 13 years old.
+- The competition is open to students only.
+- Companies and professional organizations are not eligible.
+- Participants may enter from any country or territory except the standard
+  Devpost exclusions.
+- Entries may be individual or created by teams of up to four people.
+- In addition to joining on Devpost, the organizers request completion of the
+  [registration form](https://forms.gle/DL7ye47iHE84rHQ2A).
 
-## 2. Требования к продукту
+## 2. Product requirements
 
-Нужно создать образовательный AI/ML-инструмент, который меняет то, как люди учатся, преподают или усваивают информацию. Проект должен делать знания более доступными, увлекательными или персонализированными.
+The submission must be an educational AI/ML tool that changes how people learn,
+teach, understand, or retain information. It should make knowledge more
+accessible, engaging, or personalized.
 
-Обязательные практические свойства:
+Practical requirements:
 
-- AI/ML — ядро функциональности, а не декоративная надстройка;
-- прототип работает и его можно продемонстрировать;
-- интерфейс понятен и стабилен;
-- основная логика приложения является новой и создана в рамках окна хакатона;
-- разрешены и поощряются open-source библиотеки, готовые API и предобученные модели.
+- AI/ML must power the core experience rather than act as decoration.
+- The prototype must work and be demonstrable.
+- The interface should be understandable and stable.
+- The main application logic must be new and built during the hackathon window.
+- Open-source libraries, existing APIs, and pretrained models are allowed and
+  encouraged.
 
-## 3. Оригинальность и период разработки
+## 3. Originality and development period
 
-В Rules одновременно указано:
+The Rules contain two dates that do not fully agree:
 
-- старт соревнования — 17 июля 2026 года;
-- весь код должен быть написан в окне **8–30 июля 2026 года**.
+- the competition starts on July 17, 2026;
+- all code is said to be written during July 8–30, 2026.
 
-Это несогласованность на стороне организаторов. Безопасная трактовка:
+Safe interpretation:
 
-- не выдавать старый готовый проект за новую работу;
-- явно перечислить сторонние библиотеки, модели, API, шаблоны и переиспользованные общие компоненты;
-- обеспечить, чтобы основная логика конкретного продукта была создана в разрешённый период;
-- при существенном переиспользовании заранее уточнить допустимость у организаторов.
+- do not present an old finished product as a new hackathon submission;
+- disclose external libraries, models, APIs, templates, and reused generic
+  components;
+- ensure the core product-specific logic was created during the allowed period;
+- ask the organizers in advance if substantial earlier work is reused.
 
-## 4. Комплект подачи
+## 4. Submission package
 
-### Обязательно
+### Required
 
-- [ ] Работающий прототип.
-- [ ] Исходный код: GitHub-репозиторий или эквивалент.
-- [ ] Видео-демонстрация до 2:00 включительно.
-- [ ] Страница проекта на Devpost, отправленная до дедлайна.
+- [ ] Working prototype.
+- [ ] Source code in a GitHub repository or equivalent.
+- [ ] Demo video no longer than 2:00.
+- [ ] Completed Devpost project page submitted before the deadline.
 
-### Безопасные требования к видео
+### Safe video requirements
 
-- целевая длина — 1:45–1:55;
-- после отметки 2:00 судьи смотреть не будут;
-- показать проблему, пользователя, работающий продукт и роль AI;
-- не заменять демонстрацию длинным рассказом или слайдами;
-- закончить измеримым эффектом и кратким итогом.
+- Target a duration of 1:45–1:55.
+- Judges will not watch past 2:00.
+- Show the problem, target user, working product, and role of AI.
+- Do not replace the product demonstration with a long explanation or slides.
+- End with a measurable benefit and concise conclusion.
 
-### Рекомендуемое содержимое репозитория
+### Recommended repository contents
 
-- понятный `README.md`;
-- инструкция запуска;
-- список технологий, моделей и внешних API;
-- архитектура или краткое объяснение потока данных;
-- пример входа и результата;
-- сведения об ограничениях и известных проблемах;
-- лицензии и атрибуция сторонних компонентов;
-- без API-ключей, секретов и приватных данных.
+- Clear `README.md`.
+- Setup and run instructions.
+- Technology, model, and external API list.
+- Architecture or a short data-flow explanation.
+- Example input and output.
+- Known limitations.
+- Licenses and third-party attribution.
+- No API keys, secrets, or private data.
 
-## 5. Дедлайн
+## 5. Deadline
 
-Официальное расписание Devpost:
+The official Devpost schedule states:
 
-- **30 июля 2026 года, 23:45 EDT**;
-- **31 июля 2026 года, 06:45 МСК**.
+- **July 30, 2026, 23:45 EDT**;
+- **July 31, 2026, 06:45 Moscow time**.
 
-В тексте Rules отдельно написано 23:59 и «NO EXTENSIONS». Из-за расхождения считать 23:45 EDT абсолютным дедлайном, а рабочий внутренний дедлайн установить раньше.
+The Rules separately mention 23:59 and state “NO EXTENSIONS.” Because of this
+conflict, treat 23:45 EDT as the absolute deadline and set an earlier internal
+deadline.
 
-## 6. Критерии судейства
+## 6. Judging criteria
 
-### Educational Impact — 25 баллов
+### Educational Impact — 25 points
 
-- Решает ли продукт реальную проблему образования?
-- Помогает ли он лучше учиться, преподавать или понимать материал?
-- Можно ли ясно показать пользу конкретному пользователю?
+- Does the product solve a real educational problem?
+- Does it help people learn, teach, or understand material more effectively?
+- Can its value to a specific user be demonstrated clearly?
 
-### Creative Use of AI/ML — 25 баллов
+### Creative Use of AI/ML — 25 points
 
-- Насколько умно и осмысленно встроен AI/ML?
-- Нельзя ли получить тот же результат простыми правилами?
-- Является ли AI центральной частью пользовательской ценности?
+- Is AI/ML integrated thoughtfully?
+- Could the same value be delivered with simple rules?
+- Is AI central to the user benefit?
 
-### Technical Execution — 25 баллов
+### Technical Execution — 25 points
 
-- Работает ли приложение?
-- Стабильно ли оно в демонстрационном сценарии?
-- Понятен ли интерфейс?
-- Насколько качественны код, UI и UX?
+- Does the application work?
+- Is the primary demo path stable?
+- Is the interface clear?
+- Are the code, UI, and UX well executed?
 
-> На Overview этот критерий ошибочно назван “Technical Education”, но его описание и Rules однозначно относятся к технической реализации.
+The Overview page calls this category “Technical Education,” but its description
+and the Rules clearly refer to technical execution.
 
-### Pitch & Demo — 25 баллов
+### Pitch & Demo — 25 points
 
-- Ясно ли объяснены «зачем» и «как»?
-- Укладывается ли ролик в 2 минуты?
-- Является ли демонстрация короткой, понятной и увлекательной?
+- Are the purpose and implementation explained clearly?
+- Is the video under two minutes?
+- Is the demonstration concise, understandable, and engaging?
 
-## 7. Призы
+## 7. Prizes
 
-- 1 место — $1,000 и сертификат;
-- 2 место — $400 и сертификат;
-- 3 место — $100 и сертификат;
-- 4–5 места — специальные сертификаты;
-- 6–10 места — сертификаты honorable mention.
+- 1st place — $1,000 and a certificate;
+- 2nd place — $400 and a certificate;
+- 3rd place — $100 and a certificate;
+- 4th–5th place — special certificates;
+- 6th–10th place — honorable mention certificates.
 
-Общий денежный призовой фонд: $1,500.
+Total cash prize pool: $1,500.
 
-## 8. Разрешённые технологии
+## 8. Allowed technologies
 
-Организаторы прямо разрешают готовые технологии и приводят примеры:
+The organizers explicitly allow existing technologies and give examples:
 
-- LLM API: OpenAI, Anthropic, Google Gemini;
-- open-source модели с Hugging Face;
-- аудио и речь: ElevenLabs, Whisper;
-- frontend: Next.js, React, Vue.js, Tailwind CSS;
-- быстрые Python-прототипы: Streamlit, Gradio;
-- backend: FastAPI, Node.js.
+- LLM APIs: OpenAI, Anthropic, and Google Gemini;
+- open-source Hugging Face models;
+- audio and speech tools such as ElevenLabs and Whisper;
+- frontend frameworks such as Next.js, React, Vue.js, and Tailwind CSS;
+- rapid Python application frameworks such as Streamlit and Gradio;
+- backend frameworks such as FastAPI and Node.js.
 
-Это примеры, а не обязательный стек.
+These are examples, not mandatory technologies.
 
-## 9. Финальная проверка перед отправкой
+## 9. Final submission checklist
 
-- [ ] Пользователь и образовательная проблема сформулированы одним предложением.
-- [ ] AI действительно необходим для главной функции.
-- [ ] Главный сценарий работает с чистого запуска.
-- [ ] Есть обработка ошибок внешней модели/API.
-- [ ] Нет секретов и приватных данных в репозитории и видео.
-- [ ] README позволяет судье понять и запустить проект.
-- [ ] Видео короче 2 минут и доступно по ссылке без запроса доступа.
-- [ ] Репозиторий доступен судье без запроса доступа.
-- [ ] Все обязательные поля Devpost заполнены.
-- [ ] Использованные модели, библиотеки и внешние материалы указаны.
-- [ ] Проект отправлен до 23:45 EDT, статус submission подтверждён.
+- [ ] The user and educational problem are clear in one sentence.
+- [ ] AI is necessary for the core function.
+- [ ] The main scenario works from a clean start.
+- [ ] External model and API failures are handled.
+- [ ] The repository and video contain no secrets or private data.
+- [ ] The README lets a judge understand and run the project.
+- [ ] The video is shorter than two minutes and publicly accessible.
+- [ ] The repository is accessible without requesting permission.
+- [ ] Every required Devpost field is complete.
+- [ ] Models, libraries, and external materials are disclosed.
+- [ ] The project is submitted before 23:45 EDT and its status is confirmed.
 
-## 10. Источники
+## 10. Sources
 
 - [Overview](https://prometheus-july-ai-challenge.devpost.com/)
 - [Rules](https://prometheus-july-ai-challenge.devpost.com/rules)
 - [Schedule](https://prometheus-july-ai-challenge.devpost.com/details/dates)
 - [Resources](https://prometheus-july-ai-challenge.devpost.com/resources)
 
-Проверено: 28 июля 2026 года.
+Last verified: July 28, 2026.

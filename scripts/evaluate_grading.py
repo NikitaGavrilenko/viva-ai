@@ -24,50 +24,52 @@ def main() -> int:
             model="qwen3:14b",
             timeout_seconds=120,
         ),
+        language="en",
     )
     question = Question(
         text=(
-            "Почему accuracy может вводить в заблуждение при сильном "
-            "дисбалансе классов и какие метрики лучше анализировать?"
+            "Why can accuracy be misleading with a severe class imbalance, "
+            "and which metrics should be analyzed instead?"
         ),
-        topic="Метрики классификации при дисбалансе",
+        topic="Classification metrics under class imbalance",
         expected_points=[
-            "Большой класс доминирует в общей доле правильных ответов",
+            "The majority class dominates the total fraction of correct answers",
             (
-                "Accuracy может быть высокой, даже если модель плохо "
-                "находит редкий положительный класс"
+                "Accuracy can be high even when the model fails to identify "
+                "the rare positive class"
             ),
-            "Нужно анализировать precision, recall, F1 и матрицу ошибок",
+            "Precision, recall, F1, and the confusion matrix should be analyzed",
         ],
         source_excerpt=(
-            "При сильном дисбалансе классов accuracy может вводить "
-            "в заблуждение."
+            "With a severe class imbalance, accuracy can be misleading"
         ),
     )
     answers = [
-        ("none", "Я не знаю ответа на этот вопрос."),
+        ("none", "I do not know the answer."),
         (
             "vague",
-            "Потому что классы несбалансированы и accuracy работает плохо.",
+            "The classes are imbalanced, so accuracy does not work well.",
         ),
         (
             "partial",
-            "Большой класс доминирует, поэтому accuracy может быть высокой, "
-            "хотя редкий класс модель почти не находит.",
+            "The majority class dominates, so accuracy can remain high even "
+            "when the model rarely identifies the minority class.",
         ),
         (
             "full",
-            "Accuracy считает общую долю верных ответов, поэтому при 95% "
-            "объектов большинства модель может всегда выбирать этот класс "
-            "и получить 95%, полностью пропустив редкий положительный класс. "
-            "Нужно смотреть precision, recall, F1 и матрицу ошибок.",
+            "Accuracy measures the total fraction of correct predictions. If "
+            "95% of examples belong to the majority class, a model can always "
+            "predict that class and receive 95% accuracy while completely "
+            "missing the rare positive class. Precision, recall, F1, and the "
+            "confusion matrix should be examined.",
         ),
         (
             "full_repeat",
-            "Accuracy считает общую долю верных ответов, поэтому при 95% "
-            "объектов большинства модель может всегда выбирать этот класс "
-            "и получить 95%, полностью пропустив редкий положительный класс. "
-            "Нужно смотреть precision, recall, F1 и матрицу ошибок.",
+            "Accuracy measures the total fraction of correct predictions. If "
+            "95% of examples belong to the majority class, a model can always "
+            "predict that class and receive 95% accuracy while completely "
+            "missing the rare positive class. Precision, recall, F1, and the "
+            "confusion matrix should be examined.",
         ),
     ]
 

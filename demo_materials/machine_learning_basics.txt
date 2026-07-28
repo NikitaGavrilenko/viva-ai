@@ -1,40 +1,15 @@
-ОСНОВЫ МАШИННОГО ОБУЧЕНИЯ
+MACHINE LEARNING BASICS
 
-Машинное обучение — область искусственного интеллекта, в которой алгоритмы
-строят закономерности по данным и используют их для прогнозирования или принятия
-решений без явного программирования каждого правила.
+Machine learning is a field of artificial intelligence in which algorithms discover patterns in data and use them to make predictions or decisions without explicitly programming every rule.
 
-Обучение с учителем использует размеченную выборку: каждому объекту соответствует
-правильный ответ. В задаче классификации ответ является категорией, например
-«спам» или «не спам». В задаче регрессии предсказывается числовое значение,
-например стоимость квартиры.
+Supervised learning uses labeled data: every example has a known target. In classification, the target is a category such as "spam" or "not spam." In regression, the target is a numeric value such as the price of an apartment.
 
-Обучение без учителя работает с данными без готовых ответов. Типичная задача —
-кластеризация, то есть объединение похожих объектов в группы. Снижение размерности
-используется для компактного представления данных и визуализации.
+Unsupervised learning works with data that has no predefined targets. A common task is clustering, which groups similar objects together. Dimensionality reduction creates compact representations of data and can support visualization.
 
-Выборку обычно делят на обучающую, валидационную и тестовую части. На обучающей
-части модель подбирает параметры. Валидационная часть нужна для выбора
-гиперпараметров и сравнения вариантов. Тестовая часть используется только для
-финальной независимой оценки.
+A dataset is usually divided into training, validation, and test subsets. The model learns its parameters from the training subset. The validation subset is used to choose hyperparameters and compare alternatives. The test subset should be used only for the final independent evaluation.
 
-Переобучение возникает, когда модель хорошо запоминает обучающие примеры, но плохо
-работает на новых данных. Его признаки — низкая ошибка на обучающей выборке и
-заметно более высокая ошибка на валидационной или тестовой выборке. Для борьбы с
-переобучением применяют регуляризацию, упрощение модели, увеличение данных,
-аугментацию и раннюю остановку.
+Overfitting occurs when a model memorizes the training examples but performs poorly on new data. Typical signs are low training error and substantially higher validation or test error. Regularization, simpler models, additional data, data augmentation, and early stopping can reduce overfitting.
 
-Для классификации часто используют accuracy, precision, recall и F1-меру.
-Accuracy — доля правильных ответов среди всех примеров. Precision показывает,
-какая доля объектов, названных моделью положительными, действительно положительна.
-Recall показывает, какую долю всех настоящих положительных объектов модель нашла.
-F1 — гармоническое среднее precision и recall. При сильном дисбалансе классов
-accuracy может вводить в заблуждение, поэтому полезнее анализировать precision,
-recall, F1 и матрицу ошибок.
+Common classification metrics include accuracy, precision, recall, and F1. Accuracy is the fraction of all predictions that are correct. Precision is the fraction of predicted positive examples that are actually positive. Recall is the fraction of all true positive examples found by the model. F1 is the harmonic mean of precision and recall. With a severe class imbalance, accuracy can be misleading, so precision, recall, F1, and the confusion matrix provide a more useful picture.
 
-Утечка данных происходит, если при обучении модель получает информацию, которая
-не будет доступна в момент реального применения, либо если сведения из тестовой
-выборки влияют на обучение. Например, нормализация всех данных до разбиения
-позволяет статистикам тестовой части попасть в обучение. Преобразования следует
-обучать только на тренировочной части, а затем применять к валидационной и
-тестовой.
+Data leakage occurs when training uses information that would not be available at inference time, or when information from the test subset influences training. For example, normalizing the full dataset before splitting allows test-set statistics to affect the training process. Transformations should be fitted on the training subset and then applied to the validation and test subsets.

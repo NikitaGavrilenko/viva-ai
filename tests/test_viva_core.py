@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import pytest
 
@@ -24,6 +25,8 @@ from viva_core import (
     retrieve_chunks,
     select_next_passages,
 )
+
+PROJECT_DIR = Path(__file__).resolve().parents[1]
 
 
 def test_extract_text_material() -> None:
@@ -239,6 +242,15 @@ def test_demo_question_is_bilingual() -> None:
     assert "accuracy" in demo_question("en").text.lower()
     assert "accuracy" in demo_question("ru").text.lower()
     assert demo_question("en", "basic").topic == "Supervised learning tasks"
+
+
+def test_demo_question_excerpts_match_english_demo_material() -> None:
+    material = (
+        PROJECT_DIR / "demo_materials" / "machine_learning_basics.txt"
+    ).read_text(encoding="utf-8")
+    for language in ("en", "ru"):
+        for difficulty in ("basic", "standard", "advanced"):
+            assert demo_question(language, difficulty).source_excerpt in material
 
 
 def test_short_passages_remain_available_as_sources() -> None:

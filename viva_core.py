@@ -265,9 +265,8 @@ def demo_question(
                     "Regression predicts a numeric value",
                 ],
                 source_excerpt=(
-                    "В задаче классификации ответ является категорией, "
-                    "например «спам» или «не спам». В задаче регрессии "
-                    "предсказывается числовое значение"
+                    'In classification, the target is a category such as "spam" '
+                    'or "not spam." In regression, the target is a numeric value'
                 ),
             )
         return Question(
@@ -278,9 +277,8 @@ def demo_question(
                 "Регрессия предсказывает числовое значение",
             ],
             source_excerpt=(
-                "В задаче классификации ответ является категорией, "
-                "например «спам» или «не спам». В задаче регрессии "
-                "предсказывается числовое значение"
+                'In classification, the target is a category such as "spam" '
+                'or "not spam." In regression, the target is a numeric value'
             ),
         )
 
@@ -298,8 +296,8 @@ def demo_question(
                     "Transformations must be fitted on training data only",
                 ],
                 source_excerpt=(
-                    "нормализация всех данных до разбиения позволяет "
-                    "статистикам тестовой части попасть в обучение"
+                    "normalizing the full dataset before splitting allows "
+                    "test-set statistics to affect the training process"
                 ),
             )
         return Question(
@@ -314,8 +312,8 @@ def demo_question(
                 "Преобразования обучают только на тренировочных данных",
             ],
             source_excerpt=(
-                "нормализация всех данных до разбиения позволяет "
-                "статистикам тестовой части попасть в обучение"
+                "normalizing the full dataset before splitting allows "
+                "test-set statistics to affect the training process"
             ),
         )
 
@@ -332,8 +330,7 @@ def demo_question(
                 "Precision, recall, F1, and the confusion matrix add insight",
             ],
             source_excerpt=(
-                "При сильном дисбалансе классов accuracy может вводить "
-                "в заблуждение"
+                "With a severe class imbalance, accuracy can be misleading"
             ),
         )
     return Question(
@@ -348,8 +345,7 @@ def demo_question(
             "Нужны precision, recall, F1 и матрица ошибок",
         ],
         source_excerpt=(
-            "При сильном дисбалансе классов accuracy может вводить "
-            "в заблуждение"
+            "With a severe class imbalance, accuracy can be misleading"
         ),
     )
 

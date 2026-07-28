@@ -262,11 +262,11 @@ def get_ollama_models() -> list[str]:
 
 
 if "language_toggle" not in st.session_state:
-    st.session_state.language_toggle = "RU"
+    st.session_state.language_toggle = "EN"
 
 with st.sidebar:
     language_label = st.segmented_control(
-        "Language / Язык",
+        "Language",
         options=["RU", "EN"],
         key="language_toggle",
         label_visibility="collapsed",
