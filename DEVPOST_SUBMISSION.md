@@ -45,9 +45,8 @@ Learners can choose a quick 3-question session or a full 5-question exam and
 set the difficulty to basic, standard, or advanced. The built-in demo starts
 instantly, so the core experience is easy to evaluate without uploading a file.
 
-The interface supports both Russian and English. Questions and feedback follow
-the selected language, while source evidence remains in the document's original
-language.
+Questions and feedback follow the selected interface language, while source
+evidence remains in the document's original language.
 
 ### Transparent assessment
 
@@ -82,7 +81,7 @@ core.
 - **Ollama** runs Qwen3 locally through its native API.
 - JSON Schema and **Pydantic** validate questions and criterion assessments.
 - Python calculates final scores and session summaries.
-- Streamlit manages the adaptive exam state and the responsive bilingual UI.
+- Streamlit manages the adaptive exam state and the responsive UI.
 - An OpenAI-compatible cloud endpoint remains available as an optional fallback.
 
 The default local setup uses **Qwen3 14B**. It keeps study materials on the
@@ -101,8 +100,8 @@ set checks incorrect, vague, partial, and complete answers. In the current
 golden test, the progression is `0 → 17 → 67 → 100`, and repeated complete
 answers receive the same score.
 
-Another challenge was bilingual grounding. Translating a question into English
-could break lexical matching against a Russian source. We solved this by having
+Another challenge was multilingual grounding. Translating a question could
+break lexical matching against the original source. We solved this by having
 the model select a numbered source passage while the application preserves and
 displays the original evidence.
 
@@ -116,8 +115,8 @@ provided the best practical balance for the available hardware.
 - Transparent, deterministic scoring instead of arbitrary LLM grades.
 - Grounded source evidence for questions and feedback.
 - Local-first inference with no mandatory API key.
-- A polished responsive interface in Russian and English, with quick/full
-  modes, difficulty controls, retry/skip actions, and a mastery dashboard.
+- A polished responsive interface with quick/full modes, difficulty controls,
+  retry/skip actions, and a mastery dashboard.
 - Automated unit tests and a real-model grading regression check.
 
 ### What we learned

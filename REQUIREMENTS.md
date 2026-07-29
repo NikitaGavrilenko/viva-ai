@@ -71,10 +71,7 @@ Safe interpretation:
 
 ## 5. Deadline
 
-The official Devpost schedule states:
-
-- **July 30, 2026, 23:45 EDT**;
-- **July 31, 2026, 06:45 Moscow time**.
+The official Devpost schedule states **July 30, 2026, 23:45 EDT**.
 
 The Rules separately mention 23:59 and state “NO EXTENSIONS.” Because of this
 conflict, treat 23:45 EDT as the absolute deadline and set an earlier internal

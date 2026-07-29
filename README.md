@@ -19,9 +19,8 @@ and receive:
 - a topic mastery map and personalized revision plan;
 - a downloadable Markdown report.
 
-The application supports both English and Russian. Questions and feedback use
-the selected language, while source quotations remain in their original
-language.
+Questions and feedback follow the selected interface language, while source
+quotations remain in their original language.
 
 ## Why AI is essential
 
@@ -66,7 +65,7 @@ every criterion.
 - Adaptive follow-ups or deliberate topic changes.
 - Final topic mastery dashboard.
 - Downloadable session report.
-- Responsive English and Russian interface.
+- Responsive interface.
 - Local-first inference through Ollama.
 
 ## Quick start
@@ -139,7 +138,7 @@ Key files:
 - `app.py` — Streamlit interface and exam session state;
 - `viva_core.py` — document processing, retrieval, LLM client, schemas, and
   deterministic scoring;
-- `ui_text.py` — English and Russian interface copy;
+- `ui_text.py` — interface copy;
 - `demo_materials/` — safe built-in study material;
 - `scripts/evaluate_grading.py` — real-model grading regression;
 - `tests/` — deterministic tests that do not require an API call.
@@ -199,12 +198,12 @@ Submission requirements and the final checklist are documented in
 
 ### Key dates
 
-| Stage | EDT | Moscow time |
-|---|---:|---:|
-| Project submission opened | July 17, 2026, 10:00 | July 17, 2026, 17:00 |
-| Safe submission deadline | **July 30, 2026, 23:45** | **July 31, 2026, 06:45** |
-| Voting and judging | August 1–8, 2026 | August 1–9, 2026 |
-| Winners announced | August 9, 2026, 17:00 | August 10, 2026, 00:00 |
+| Stage | EDT |
+|---|---:|
+| Project submission opened | July 17, 2026, 10:00 |
+| Safe submission deadline | **July 30, 2026, 23:45** |
+| Voting and judging | August 1–8, 2026 |
+| Winners announced | August 9, 2026, 17:00 |
 
 The Rules page mentions 23:59, while the official schedule and countdown show
 23:45 EDT. The project uses the earlier time as the safe deadline.
@@ -216,10 +215,10 @@ The Rules page mentions 23:59, while the official schedule and countdown show
 - [x] Add deterministic scoring and regression tests.
 - [x] Prepare a public repository and setup instructions.
 - [x] Prepare the Devpost story and submission archive.
-- [ ] Join the hackathon on Devpost.
-- [ ] Complete the organizers' registration form.
+- [x] Join the hackathon on Devpost.
+- [x] Complete the organizers' registration form.
 - [x] Record and publish a video under 1:55.
-- [ ] Submit the project several hours before the deadline.
+- [x] Submit the project before the deadline.
 
 ## Official links
 
