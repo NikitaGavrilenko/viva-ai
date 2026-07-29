@@ -1,9 +1,13 @@
 # Viva AI
 
-![Viva AI — adaptive oral exam coach](assets/viva-ai-devpost-thumbnail.png)
+[![Viva AI — adaptive oral exam coach](assets/viva-ai-devpost-thumbnail.png)](https://youtu.be/pNTsDsS3mn8)
 
 Viva AI is an adaptive oral exam coach grounded in the learner's own study
 materials. It was built for the **Prometheus July AI Challenge 2026**.
+
+## Video demo
+
+Watch the [1:48 hackathon demo on YouTube](https://youtu.be/pNTsDsS3mn8).
 
 Upload a PDF, TXT, or Markdown document, answer questions in your own words,
 and receive:
@@ -214,7 +218,7 @@ The Rules page mentions 23:59, while the official schedule and countdown show
 - [x] Prepare the Devpost story and submission archive.
 - [ ] Join the hackathon on Devpost.
 - [ ] Complete the organizers' registration form.
-- [ ] Record a video under 1:55.
+- [x] Record and publish a video under 1:55.
 - [ ] Submit the project several hours before the deadline.
 
 ## Official links
